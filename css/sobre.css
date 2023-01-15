@@ -1,0 +1,208 @@
+.sobre {
+  background-color: #292929;
+}
+
+.wave {
+  width: 4000px;
+}
+
+.sobre-container {
+  margin-top: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-subtitulo {
+  text-align: center;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.sobre-retangulo {
+  width: 82px;
+  height: 2px;
+  margin-bottom: 200px;
+  background-color: #f0f0f0;
+  justify-self: center;
+  position: relative;
+  right: -30px;
+}
+
+.sobre-carreira {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 200px;
+}
+
+.sobre-imagem {
+  margin-right: 100px;
+  justify-self: end;
+}
+
+.sobre-carreira-textos {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  align-self: center;
+}
+
+.sobre-carreira-h3 {
+  color: #fafafa;
+  font-size: 2.2rem;
+  margin-bottom: 0px;
+}
+
+.carreira-retangulo {
+  width: 82px;
+  height: 2px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.sobre-carreira-texto {
+  color: #a3a3a3;
+  max-width: 30ch;
+  line-height: 1.5;
+}
+
+.sobre-carreira-texto strong {
+  color: #fafafa;
+}
+
+/* acima carreira, abaixo formação */
+/* acima carreira, abaixo formação */
+/* acima carreira, abaixo formação */
+/* acima carreira, abaixo formação */
+
+.sobre-formaçao {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 200px;
+}
+
+.sobre-imagem2 {
+  justify-self: start;
+}
+
+.sobre-formaçao-textos {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  justify-self: end;
+  align-self: center;
+  margin-right: 100px;
+}
+
+.sobre-formaçao-h3 {
+  color: #fafafa;
+  margin-bottom: 0px;
+  font-size: 2.2rem;
+  text-align: end;
+}
+
+.formaçao-retangulo {
+  width: 82px;
+  height: 2px;
+  background-color: #f0f0f0;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  justify-self: end;
+}
+
+.sobre-formaçao-texto {
+  color: #a3a3a3;
+  max-width: 25ch;
+  line-height: 1.5;
+  text-align: end;
+}
+
+.sobre-formaçao-texto strong {
+  color: #fafafa;
+}
+
+@media (max-width: 1140px) {
+  .sobre {
+    align-items: center;
+    justify-items: center;
+  }
+  .sobre-imagem {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  .sobre-carreira-textos {
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 0px;
+  }
+  .wave {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .sobre {
+    align-content: center;
+    justify-content: center;
+  }
+
+  .sobre-imagem {
+    display: none;
+  }
+
+  .sobre-imagem2 {
+    display: none;
+  }
+
+  .sobre-carreira-textos {
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .sobre-carreira {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-formaçao {
+    grid-template-columns: 1fr;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .sobre-formaçao-textos {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-right: 0px;
+  }
+
+  .sobre-formaçao-h3 {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .sobre-formaçao-texto {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .sobre p {
+    font-size: 32px;
+  }
+
+  .sobre h2 {
+    margin-top: 100px;
+  }
+}
