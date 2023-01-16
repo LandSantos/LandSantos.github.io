@@ -70,11 +70,11 @@
   color: #a3a3a3;
 }
 
-.projetos img {
+.projetos-div img {
   transition: 0.5s;
 }
 
-.projetos img:hover {
+.projetos-div img:hover {
   transform: scale(1.04) rotate(1deg);
 }
 

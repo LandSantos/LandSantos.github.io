@@ -15,10 +15,6 @@
   position: relative;
 }
 
-.introducao h1 span {
-  /* font-family: "graphik"; */
-}
-
 .introducao h1::after {
   content: "";
   display: block;
