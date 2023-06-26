@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frank Land - Portfólio</title>
     <meta name="description" content="Desenvolvedor Front End e UX/UI DESGINER">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./logo aba.svg" type="image/svg+xml">
+    <script>document.documentElement.className += ' js'</script>
 </head>
 
 <body>
     <header class="header">
         <img src="./img/marca.svg" alt="Portfólio">
-        <nav>
+        <nav class="js-menu">
             <ul class="header-menu">
                 <li> <a href="#sobre">Sobre</a></li>
                 <li> <a href="#habilidades">Habilidades</a></li>
@@ -26,25 +27,26 @@
         </nav>
     </header>
 
-    <main class="introducao">
+    <main class="introducao js-scroll">
         <div>
-            <h1> OLÁ, EU SOU <br>FRANK <span>LAND</span></h1>
+            <h1> OLÁ, EU SOU <br>FRANK LAND</h1>
             <!-- <img class="retangulotitulo" src="./img/retangulo do titulo.svg" alt=""> -->
             <p>DESENVOLVER FRONT-END & UX/UI DESIGNER</p>
             <ul class="introducao-link">
                 <li> <a target="_blank" class="button1" href="https://github.com/LandSantos">GITHUB</a></li>
                 <li> <a target="_blank" class="button2" href="https://www.linkedin.com/in/frank-land-b74354257/">LINKEDIN</a></li>
+                <li> <a target="_blank" class="button3" href="https://www.behance.net/frankland3">BEHANCE</a></li>
             </ul>
         </div>
     </main>
 
-    <section class="sobre" id="sobre" aria-label="Sobre">
+    <section class="sobre js-scroll" id="sobre" aria-label="Sobre">
         <div class="sobre-container">
-            <img class="wave" src="./img/waves.svg" alt="">
+            <img id="sobre" class="wave" src="./img/waves.svg" alt="">
             <h2 class="sobre-subtitulo">Sobre</h2>
             <img class="sobre-retangulo" src="./img/retangulo do titulo.svg" alt="">
-            <div class="sobre-carreira">
-                <img class="sobre-imagem" src="./img/vetor 1 secao sobre.svg" alt="">
+            <div class="sobre-carreira js-scroll">
+                <img class="sobre-imagem" src=" ./img/vetor 1 secao sobre.svg" alt="">
                 <div class="sobre-carreira-textos">
                     <h3 class="sobre-carreira-h3">Carreira</h3>
                     <img class="carreira-retangulo" src="./img/retangulo do titulo.svg" alt="">
@@ -53,7 +55,7 @@
             </div>
         </div>
 
-        <div class="sobre-formaçao">
+        <div class="sobre-formaçao js-scroll2">
             <img class="sobre-imagem2" src="./img/vetor 2 secao sobre.svg" alt="">
             <div class="sobre-formaçao-textos">
                 <h3 class="sobre-formaçao-h3">Formação</h3>
@@ -65,35 +67,32 @@
 
     </section>
 
-    <section class="habilidades" id="habilidades" aria-label="Habilidades">
+    <section class="habilidades js-scroll2" id="habilidades" aria-label="Habilidades">
         <h2 class="habilidades-titulo">HABILIDADES</h2>
         <img class="habilidades-retangulo" src="./img/retangulo do titulo.svg" alt="">
         <div class="habilidades-container">
             <h3 class="programming-subtitulo">PROGRAMMING SKILLS </h3>
-            <div class="teste">
-                <div class="programming-info">
-                    <img class="img" src="./img/HTML LOGO.svg" alt="Logo HTML">
-                    <img class="img" src="./img/CSS LOGO.svg" alt="Logo CSS">
-                    <img class="img" src="./img/JS LOGO.svg" alt="Logo Javascript">
+            <div class="programming-info js-tabskills">
+                <img class="img1" src="./img/HTML LOGO.svg" alt="Logo HTML">
+                <img class="img2" src="./img/CSS LOGO.svg" alt="Logo CSS">
+                <img class="img3" src="./img/JS LOGO.svg" alt="Logo Javascript">
+            </div>
+
+            <div class="dhabilidades">
+                <h3 class="dhabilidades-subtitulo">OUTRAS HABILIDADES </h3>
+                <div class="dhabilidades-info">
+                    <img class="pr" src="./img/PREMIERE LOGO.svg" alt="Logo Adobe Premiere">
+                    <img class="ps" src="./img/PHOTOSHOP LOGO.svg" alt="Logo Adobe Photoshop">
+                    <img class="ae" src="./img/AFTER LOGO.svg" alt="Logo Adobe After Effects">
+                    <img class="figma" src="./img/figma.svg" alt="Logo Figma">
                 </div>
             </div>
-        </div>
-
-        <div class="dhabilidades">
-            <h3 class="dhabilidades-subtitulo">DEMAIS HABILIDADES </h3>
-            <div class="dhabilidades-info">
-                <img class="pr" src="./img/PREMIERE LOGO.svg" alt="Logo Adobe Premiere">
-                <img class="ps" src="./img/PHOTOSHOP LOGO.svg" alt="Logo Adobe Photoshop">
-                <img class="ae" src="./img/AFTER LOGO.svg" alt="Logo Adobe After Effects">
-                <img class="figma" src="./img/figma.svg" alt="Logo Figma">
-            </div>
-        </div>
 
     </section>
 
-    <section class="projetos" id="projetos" aria-label="Projetos">
+    <section class="projetos js-scroll" aria-label="Projetos">
         <div class="projetos-container">
-            <img class="wave" src="./img/waves.svg" alt="">
+            <img class="wave" id="projetos" src="./img/waves.svg" alt="">
             <h2 class="projetos-titulo">PROJETOS</h2>
             <img class="projetos-retangulo" src="./img/retangulo do titulo.svg" alt="">
             <div class="projetos-div">
@@ -126,6 +125,7 @@
         <p class="footer-copy">Frank Land. Alguns direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
