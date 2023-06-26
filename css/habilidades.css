@@ -1,7 +1,6 @@
 .habilidades {
   display: grid;
   margin-top: 150px;
-  margin-bottom: 200px;
 }
 
 .habilidades-titulo {
@@ -20,7 +19,7 @@
   margin-bottom: 170px;
   justify-self: center;
   position: relative;
-  right: 93px;
+  right: 103px;
 }
 
 .habilidades-container {
@@ -35,7 +34,7 @@
   color: #292929;
   position: relative;
   z-index: 1;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
 }
 
 .programming-subtitulo::after {
@@ -54,11 +53,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
   align-items: center;
-  justify-items: center;
-  position: relative;
-  align-content: start;
-  margin-bottom: 42px;
+  margin-bottom: 182px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -76,6 +73,7 @@
 .programming-info img:hover {
   scale: 1.1;
   transition: 300ms;
+  cursor: pointer;
 }
 
 .programming-info:hover {
@@ -83,8 +81,30 @@
   transform: scale(1.05);
 }
 
-/* 
+.js .js-paragrafo-hab {
+  display: none;
+  color: #292929;
+  font-size: 1.5rem;
+}
 
+.js-paragrafo-hab.ativo {
+  display: block;
+  animation: show 0.5s forwards;
+  flex-basis: 100%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* 
 
 
 
@@ -104,7 +124,7 @@
   color: #292929;
   position: relative;
   z-index: 1;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   justify-self: center;
 }
 
@@ -124,6 +144,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 130px;
   justify-self: start;
   align-self: start;
   background: rgba(217, 217, 217, 0.58);
@@ -140,9 +161,16 @@
   transition: 500ms;
 }
 
+.dhabilidades-info img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+
 .dhabilidades-info img:hover {
   scale: 1.1;
   transition: 300ms;
+  cursor: pointer;
 }
 
 .dhabilidades-info:hover {

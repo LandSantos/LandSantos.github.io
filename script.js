@@ -45,23 +45,5 @@ function initAnimaçaoScroll() {
 
     window.addEventListener("scroll", animaScroll);
   }
-  const sections2 = document.querySelectorAll(".js-scroll2");
-
-  if (sections2.length) {
-    const windowMetade2 = window.innerHeight * 0.6;
-
-    function animaScroll() {
-      sections2.forEach((section) => {
-        const sectionTop2 = section.getBoundingClientRect().top;
-        const isSectionVisible2 = sectionTop2 - windowMetade2 < 0;
-        if (isSectionVisible2) section.classList.add("ativo");
-        else section.classList.remove("ativo");
-      });
-    }
-
-    animaScroll();
-
-    window.addEventListener("scroll", animaScroll);
-  }
 }
 initAnimaçaoScroll();
