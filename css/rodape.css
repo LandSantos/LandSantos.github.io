@@ -30,15 +30,21 @@
   margin-bottom: 30px;
 }
 
-.footer-contato li a {
-  color: #fff;
-}
-
 .footer-copy {
   grid-column: 1 / -1;
   font-size: 1.125rem;
   color: #8f8f8f;
   justify-self: center;
+}
+
+@media (max-width: 1200px) {
+  .footer-texto {
+    margin-left: 20px;
+  }
+  .footer-contato li {
+    margin-right: 20px;
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -50,13 +56,14 @@
   }
 
   .footer-contato li {
+    margin-right: 0px;
     text-align: center;
     font-size: 1.8rem;
   }
   .footer-texto {
+    margin-left: 0px;
     font-size: 1rem;
     max-width: 40ch;
-
     text-align: center;
   }
 }
