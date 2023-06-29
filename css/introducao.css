@@ -117,4 +117,8 @@
     font-size: 3.6rem;
     margin-top: 5px;
   }
+  .introducao-link a {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
 }

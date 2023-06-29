@@ -88,6 +88,35 @@
   transform: scale(1.04) rotate(1deg);
 }
 
+@media (min-width: 1800px) {
+  .projetos-container {
+    background: #292929;
+    margin-top: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projetos-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 240px;
+    margin-left: 200px;
+  }
+
+  .projetos-div1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 240px;
+  }
+}
+
 @media (max-width: 950px) {
   .projetos-div {
     display: grid;
